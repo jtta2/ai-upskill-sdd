@@ -1,0 +1,19 @@
+[Bb]in/
+[Ob]j/
+# Felhasználói specifikus beállítások
+.vs/
+*.user
+*.userosscache
+*.sln.docstates
+# Fejlesztői környezet és cache
+.vscode/
+
+# === FRONTEND (Node/React/Vite) KISZŰRÉSE ===
+# Letöltött csomagok (brutálisan sok fájl, tilos feltölteni)
+node_modules/
+# Fordítási mappa (ha buildelsz)
+dist/
+# IDE és rendszerszemét
+.DS_Store
+*.local
+.eslintcache
