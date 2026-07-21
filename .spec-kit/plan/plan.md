@@ -9,7 +9,7 @@ We will create a single .NET Solution named `LogAnalyzer.sln` containing three p
    - `Interfaces/IAIService.cs` (AI chat processing abstraction)
 
 2. **LogAnalyzer.Infrastructure (Class Library)**
-   - `Data/LogDbContext.cs` (EF Core context with In-Memory or Local SQL Server support)
+   - `Data/LogDbContext.cs` (EF Core context configured to use In-Memory Database)
    - `Data/LogRepository.cs` (Implements ILogRepository, includes data seeding logic)
    - `Services/AzureAIService.cs` (Implements IAIService using HttpClient to connect to the infrastructure LLM endpoint)
 
