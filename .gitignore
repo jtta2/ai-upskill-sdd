@@ -1,19 +1,17 @@
 [Bb]in/
-[Ob]j/
-# Felhasználói specifikus beállítások
+[Oo]bj/
+out/
+
 .vs/
+.vscode/
 *.user
 *.userosscache
 *.sln.docstates
-# Fejlesztői környezet és cache
-.vscode/
+*.suo
 
-# === FRONTEND (Node/React/Vite) KISZŰRÉSE ===
-# Letöltött csomagok (brutálisan sok fájl, tilos feltölteni)
 node_modules/
-# Fordítási mappa (ha buildelsz)
 dist/
-# IDE és rendszerszemét
-.DS_Store
-*.local
 .eslintcache
+
+.DS_Store
+Thumbs.db
