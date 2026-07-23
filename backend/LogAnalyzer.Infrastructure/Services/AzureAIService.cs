@@ -31,7 +31,9 @@ public class AzureAIService(HttpClient httpClient, string apiKey, string endpoin
             Content = new StringContent(JsonSerializer.Serialize(requestPayload, JsonOptions), Encoding.UTF8, "application/json")
         };
 
-        request.Headers.TryAddWithoutValidation("Authorization", $"Bearer {apiKey}");
+        //request.Headers.TryAddWithoutValidation("Authorization", $"Bearer {apiKey}");
+        request.Headers.TryAddWithoutValidation("Api-Key", apiKey);
+
 
         using var response = await httpClient.SendAsync(request);
         var responseContent = await response.Content.ReadAsStringAsync();
